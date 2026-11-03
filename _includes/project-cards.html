@@ -1,0 +1,24 @@
+{% comment %}
+  Proje kartı ızgarası. Kullanım:
+  {% include project-cards.html projects=site.data.projects %}
+{% endcomment %}
+<div class="project-grid">
+  {% for p in include.projects %}
+  <article class="project-card">
+    {% if p.image %}
+    <img class="project-img" src="{{ p.image | relative_url }}" alt="{{ p.name }}" loading="lazy">
+    {% endif %}
+    <div class="project-body">
+      <h3>{{ p.name }}</h3>
+      <p>{{ p.description }}</p>
+      <ul class="project-tech">
+        {% for t in p.tech %}<li>{{ t }}</li>{% endfor %}
+      </ul>
+      <div class="project-links">
+        {% if p.github %}<a href="{{ p.github }}" target="_blank" rel="noopener"><i class="fab fa-github"></i> Kod</a>{% endif %}
+        {% if p.demo %}<a href="{{ p.demo }}" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Demo</a>{% endif %}
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</div>

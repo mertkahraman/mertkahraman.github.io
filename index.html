@@ -1,0 +1,27 @@
+---
+layout: page
+title: Merhaba, ben Mert
+subtitle: Yazılım geliştirici · Projeler ve notlar
+css: /assets/css/custom.css
+---
+
+<p class="lead">
+  Kendi projelerimi ve öğrendiklerimi burada paylaşıyorum.
+  Daha fazlası için <a href="{{ '/aboutme' | relative_url }}">hakkımda</a> sayfasına göz at.
+</p>
+
+<h2 class="section-title">Öne çıkan projeler</h2>
+{% assign featured = site.data.projects | where: "featured", true %}
+{% include project-cards.html projects=featured %}
+<p><a href="{{ '/projects' | relative_url }}">Tüm projeler &rarr;</a></p>
+
+<h2 class="section-title">Son yazılar</h2>
+<ul class="recent-posts">
+  {% for post in site.posts limit:5 %}
+  <li>
+    <span class="post-date">{{ post.date | date: site.date_format }}</span>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+<p><a href="{{ '/blog' | relative_url }}">Tüm yazılar &rarr;</a></p>

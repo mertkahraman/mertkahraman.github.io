@@ -1,0 +1,24 @@
+---
+title: Etiketler
+subtitle: Yazıları konuya göre bul
+css: /assets/css/custom.css
+---
+
+{% assign tags = site.tags | sort %}
+<div class="tag-cloud">
+  {% for tag in tags %}
+  <a href="#{{ tag[0] | slugify }}">{{ tag[0] }} <span>({{ tag[1].size }})</span></a>
+  {% endfor %}
+</div>
+
+{% for tag in tags %}
+<h3 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h3>
+<ul class="recent-posts">
+  {% for post in tag[1] %}
+  <li>
+    <span class="post-date">{{ post.date | date: site.date_format }}</span>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}

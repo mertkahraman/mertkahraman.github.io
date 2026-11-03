@@ -1,0 +1,80 @@
+# --- Temel bilgiler ---------------------------------------------------------
+title: Mert'in Sitesi
+author: Mert
+url: "https://mertkahraman.github.io"
+baseurl: ""
+repository: mertkahraman/mertkahraman.github.io   # GitHub'daki repo adı
+description: Yazılım geliştirici — projeler ve blog
+lang: tr
+
+# Beautiful Jekyll temasını uzaktan kullan (fork gerekmez)
+remote_theme: daattali/beautiful-jekyll@6.0.1
+
+# --- Navbar -----------------------------------------------------------------
+# Ortada yuvarlak profil fotoğrafı
+avatar: "/assets/img/avatar.svg"
+round-avatar: true
+
+navbar-links:
+  Hakkımda: "aboutme"
+  Projeler: "projects"
+  Blog:
+    - Yazılar: "blog"
+    - Etiketler: "tags"
+    - RSS: "feed.xml"
+
+# --- Footer sosyal linkler --------------------------------------------------
+social-network-links:
+  email: "ornek@mail.com"
+  github: mertkahraman
+  # linkedin: kullanici-adin
+  rss: true
+
+rss-description: Yazılım, projeler ve notlar
+
+# --- Görünüm ----------------------------------------------------------------
+date_format: "%d.%m.%Y"
+excerpt_length: 40
+post_search: true          # navbar'da arama ikonu
+navbar-col: "#F5F5F5"
+navbar-text-col: "#404040"
+link-col: "#008AFF"
+footer-col: "#F5F5F5"
+
+# Google Analytics 4 (isteğe bağlı) — ölçüm kimliğini yaz
+# gtag: "G-XXXXXXXXXX"
+
+# --- Jekyll ayarları --------------------------------------------------------
+markdown: kramdown
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+kramdown:
+  input: GFM
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: false
+      social-share: true
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed

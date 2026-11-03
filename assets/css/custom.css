@@ -1,0 +1,111 @@
+/* Projeler, ana sayfa ve etiketler için ek stiller */
+
+.section-title {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.project-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #f5f5f5;
+}
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1rem 1.1rem 1.1rem;
+}
+
+.project-body h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.2rem;
+}
+
+.project-body p {
+  flex: 1;
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 0;
+  margin: 0 0 0.75rem;
+  list-style: none;
+}
+
+.project-tech li,
+.tag-cloud a {
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #0060b3;
+  font-size: 0.8rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.recent-posts {
+  padding-left: 0;
+  list-style: none;
+}
+
+.recent-posts li {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.post-date {
+  display: inline-block;
+  min-width: 6.5rem;
+  color: #808080;
+  font-size: 0.9rem;
+}
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag-cloud a:hover {
+  text-decoration: none;
+  background: #d9eaff;
+}
+
+.tag-cloud span {
+  color: #808080;
+}

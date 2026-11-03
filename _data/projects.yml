@@ -1,0 +1,21 @@
+# Her proje bir kayıt. "featured: true" olanlar ana sayfada da görünür.
+- name: Hava Durumu Uygulaması
+  description: Şehir arayıp anlık hava durumu ve 5 günlük tahmin gösteren küçük bir web uygulaması.
+  image: /assets/img/projects/placeholder.svg
+  tech: [JavaScript, API, CSS]
+  github: https://github.com/mertkahraman/hava-durumu
+  demo: https://mertkahraman.github.io/hava-durumu
+  featured: true
+
+- name: Görev Takip API'si
+  description: Kullanıcı girişi, görev ekleme/silme ve etiketleme destekleyen REST API.
+  image: /assets/img/projects/placeholder.svg
+  tech: [Python, FastAPI, PostgreSQL]
+  github: https://github.com/mertkahraman/gorev-api
+  featured: true
+
+- name: Kişisel Site
+  description: Şu an baktığın site — Jekyll ve Beautiful Jekyll temasıyla GitHub Pages üzerinde.
+  image: /assets/img/projects/placeholder.svg
+  tech: [Jekyll, Markdown, GitHub Pages]
+  github: https://github.com/mertkahraman/mertkahraman.github.io
