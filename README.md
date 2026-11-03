@@ -19,7 +19,7 @@ temanın güncel sürümü.)
    git push -u origin main
    ```
 4. Repo ▸ **Settings ▸ Pages** ▸ Source: *Deploy from a branch*, Branch: `main` / `(root)`.
-5. 1–2 dakika sonra site `https://mertkahraman.github.io` adresinde açılır.
+5. 1–2 dakika sonra site `https://mertkahraman.org` adresinde açılır (alan adı `CNAME` dosyasında).
    Derleme hatalarını repo'nun **Actions** sekmesinde görebilirsin.
 
 ## İçerik ekleme

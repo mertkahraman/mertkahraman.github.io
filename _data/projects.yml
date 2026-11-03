@@ -4,7 +4,7 @@
   image: /assets/img/projects/placeholder.svg
   tech: [JavaScript, API, CSS]
   github: https://github.com/mertkahraman/hava-durumu
-  demo: https://mertkahraman.github.io/hava-durumu
+  demo: https://mertkahraman.org/hava-durumu
   featured: true
 
 - name: Görev Takip API'si

@@ -14,4 +14,4 @@ hangi teknolojileri kullanıyorsun.
 
 ### İletişim
 
-E-posta veya GitHub üzerinden ulaşabilirsin — linkler sayfanın altında.
+E-posta: [mail@mertkahraman.org](mailto:mail@mertkahraman.org) — GitHub ve LinkedIn linkleri sayfanın altında.

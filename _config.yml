@@ -1,7 +1,7 @@
 # --- Temel bilgiler ---------------------------------------------------------
 title: Mert'in Sitesi
 author: Mert
-url: "https://mertkahraman.github.io"
+url: "https://mertkahraman.org"
 baseurl: ""
 repository: mertkahraman/mertkahraman.github.io   # GitHub'daki repo adı
 description: Yazılım geliştirici — projeler ve blog
@@ -25,7 +25,7 @@ navbar-links:
 
 # --- Footer sosyal linkler --------------------------------------------------
 social-network-links:
-  email: "ornek@mail.com"
+  email: "mail@mertkahraman.org"
   github: mertkahraman
   linkedin: mert-kahraman-769985b1
   rss: true
