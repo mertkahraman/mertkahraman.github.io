@@ -18,6 +18,7 @@ round-avatar: true
 navbar-links:
   Hakkımda: "aboutme"
   Projeler: "projects"
+  Sertifikalar: "certifications"
   Blog:
     - Yazılar: "blog"
     - Etiketler: "tags"
@@ -72,6 +73,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - scripts
 
 plugins:
   - jekyll-remote-theme
