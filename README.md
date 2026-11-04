@@ -1,7 +1,7 @@
 # Kişisel Portfolyo + Blog
 
 [Jekyll](https://jekyllrb.com) + [Beautiful Jekyll](https://beautifuljekyll.com) teması ile,
-GitHub Pages üzerinde ücretsiz yayınlanan site. (matt2005.github.io ile aynı altyapı,
+GitHub Pages üzerinde ücretsiz yayınlanan site.
 temanın güncel sürümü.)
 
 ## Yayına alma (Ruby kurmadan)
